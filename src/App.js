@@ -1,12 +1,20 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter, Routes,Route, Navigate} from "react-router-dom";
+import Login from './pages/Login';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
     <>
-    
-    <h1>Hello Welcome to the EMS</h1>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Navigate to={"/admin-dashboard"}></Navigate>}></Route>
+      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/admin-dashboard' element={<AdminDashboard/>}></Route>
+    </Routes>
+    </BrowserRouter>
     </>
   );
 }

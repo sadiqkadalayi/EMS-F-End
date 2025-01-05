@@ -1,0 +1,27 @@
+.col-main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.link-to {
+    text-decoration: none;
+    color: rgb(158, 153, 228);
+    font-weight: 400;
+    
+}
+
+.link-to:hover{
+    color: white;
+    font-weight: 500;
+}
+
+.forg {
+    color: white;
+    text-decoration: none;
+}
+
+.forg:hover {
+    text-decoration: underline;
+    
+
+}
